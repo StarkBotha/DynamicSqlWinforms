@@ -1,0 +1,14 @@
+/* <name>Update user firstname by specified username</name> */ 
+/* <connstring>Axis</connstring> */
+/*
+<variables>
+	@firstName:VARCHAR(200):First name of the user 
+	@username:VARCHAR(50):UserName
+</variables>
+*/
+
+UPDATE Users
+SET 
+	FirstName=@firstName
+WHERE
+	UserName=@username

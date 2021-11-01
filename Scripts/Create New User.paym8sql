@@ -1,0 +1,37 @@
+/* <name>Add a new user</name> */ 
+/* <connstring>Axis</connstring> */
+/*
+<variables>
+	@firstName:VARCHAR(50):First Name
+	@lastName:VARCHAR(50):Last Name
+	@userName:VARCHAR(50):Username
+	@emailAddress:VARCHAR(50):Email Address
+	@cellNumber:VARCHAR(50):Cell Number
+	@idNumber:VARCHAR(50):ID Number 
+	@phoneNumber:VARCHAR(50):Phone Number 
+	@birthDate:DATETIME:Birth Date 
+</variables>
+*/
+
+INSERT INTO Users
+VALUES
+(
+	NEWID(),
+	'81DF63C5-4822-4797-BD81-00630E7B1545',
+	@firstName,
+	'AB64AB2A-3B4F-4D1F-AD27-0BCDE28A8604',
+	@lastName,
+	@userName,
+	@emailAddress,
+	@cellNumber,
+	@idNumber,
+	NULL,
+	'CLR:Password',
+	GETDATE(),
+	1,1,0,0,
+	@phoneNumber,
+	NULL,
+	@birthDate,
+	NULL,
+	'28517D97-7823-4208-B14E-EBC108878F3A'
+)
